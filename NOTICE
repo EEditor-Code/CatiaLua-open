@@ -1,0 +1,44 @@
+CatiaLua
+Copyright (C) 2026 nwpu052009 <ljwangcumtb@163.com>
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+--------------------------------------------------------------------------------
+Third-party / dependencies
+--------------------------------------------------------------------------------
+
+Lua 5.3.2
+    Copyright (C) 1994-2020 Lua.org, PUC-Rio
+    Licensed under the MIT License.
+    Lua is required at build/runtime (lua.lib / lua.dll) but is not included
+    in this repository.
+
+Dassault Systemes CATIA V5 / CAA RADE
+    Proprietary software. Not included and not redistributed.
+    You must install CATIA V5R18 and CAA RADE B18 (and Visual Studio 2005)
+    yourself to build this project.
+
+CATIAV5Level.lvl
+    Part of the CATIA CAA SDK (Copyright Dassault Systemes).
+    For licensing reasons this file is NOT redistributed. Copy it from your
+    CAA installation into the workspace root before building.
+
+CAA wizard-generated skeleton files
+    Some files under CatiaLua/*.m/ and CatiaLua/IdentityCard/ are generated
+    from Dassault Systemes CAA wizard templates and retain their original
+    "COPYRIGHT Dassault Systemes" headers. They are included so that the CAA
+    module can be built, and remain subject to the Dassault CAA license.
+    The LGPL-2.1-or-later license applies to the original code authored in
+    this repository (files without a Dassault copyright header).

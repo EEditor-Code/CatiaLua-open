@@ -1,0 +1,45 @@
+// DO NOT EDIT :: THE CAA2 WIZARD WILL REPLACE ALL THE CODE HERE
+CATDlgDialog DlgLuaRunner
+{
+  STYLE = CATDlgWndAutoResize|CATDlgWndNoButton|CATDlgGridLayout;
+  ROWRES = { 1 };
+  COLRES = { 0 };
+}
+CATDlgFrame Frame024
+{
+  FATHER = DlgLuaRunner;
+  STYLE = CATDlgFraNoFrame|CATDlgGridLayout;
+  GRID = { 1, 0, 1, 1, CATGRID_4SIDES };
+  ROWRES = { 0 };
+  COLRES = { 0 };
+}
+
+CATDlgPushButton PushButtonRun
+{
+  FATHER = Frame024;
+  GRID = { 0, 1, 1, 1, CATGRID_RIGHT|CATGRID_BOTTOM };
+}
+
+CATDlgContainer Container025
+{
+  FATHER = Frame024;
+  HEIGHT = 10;
+  WIDTH = 300;
+  GRID = { 0, 0, 1, 1, CATGRID_4SIDES };
+}
+
+CATDlgPushButton PushButtonCancel
+{
+  FATHER = Frame024;
+  GRID = { 0, 3, 1, 1, CATGRID_RIGHT|CATGRID_BOTTOM };
+}
+
+CATDlgContainer Container028
+{
+  FATHER = Frame024;
+  HEIGHT = 10;
+  WIDTH = 10;
+  GRID = { 0, 2, 1, 1, CATGRID_RIGHT|CATGRID_BOTTOM };
+}
+
+// END WIZARD REPLACEMENT ZONE

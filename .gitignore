@@ -1,0 +1,37 @@
+# build / local artifacts
+win_b64/
+temp/
+_history/
+ToolsData/
+.cache/
+compile_commands.json
+
+# CAA generated
+CatiaLua/*/Objects/
+CatiaLua/*/LocalGenerated/
+CatiaLua/ImportedInterfaces/
+CatiaLua/various/
+CatiaLua/ProtectedGenerated/
+CatiaLua/CNext/code/bin/lua.dll
+
+# binaries
+*.pdb
+*.obj
+*.dll
+*.lib
+*.exp
+*.manifest
+*.ilk
+*.log
+*.zip
+*.rar
+
+# local machine config (not redistributed)
+V5R18.txt
+Install_config_win_b64
+Install_config_intel_a
+CATIAV5Level.lvl
+
+# python
+__pycache__/
+*.pyc

@@ -1,0 +1,41 @@
+!----------------------------------------------------------
+!   DASSAULT SYSTEMES  -  V5 ENVIRONMENT FILE
+!----------------------------------------------------------
+! MODE : User
+! TYPE : CATIA
+! TMSTMP : 1517203038
+! ARGS : -icon yes -menu yes -desktop no -cs CATIA -a user
+!----------------------------------------------------------
+
+CATInstallPath=<CATIA_INSTALL>\win_b64;<WORKSPACE>\win_b64
+CATDLLPath=<WORKSPACE>\win_b64\code\bin;<CATIA_INSTALL>\win_b64\code\bin
+CATICPath=<WORKSPACE>\win_b64\code\productIC;<CATIA_INSTALL>\win_b64\code\productIC
+CATCommandPath=<WORKSPACE>\win_b64\code\command;<CATIA_INSTALL>\win_b64\code\command
+CATDictionaryPath=<WORKSPACE>\win_b64\code\dictionary;<CATIA_INSTALL>\win_b64\code\dictionary
+CATDocView=<WORKSPACE>\win_b64\doc;<CATIA_INSTALL>\win_b64\doc
+CATReffilesPath=<WORKSPACE>\win_b64\reffiles;<CATIA_INSTALL>\win_b64\reffiles
+CATFontPath=<WORKSPACE>\win_b64\resources\fonts;<CATIA_INSTALL>\win_b64\resources\fonts
+CATGalaxyPath=<WORKSPACE>\win_b64\resources\galaxy;<CATIA_INSTALL>\win_b64\resources\galaxy
+CATGraphicPath=<WORKSPACE>\win_b64\resources\graphic;<WORKSPACE>\win_b64\resources\graphic\icons;<WORKSPACE>\win_b64\resources\graphic\figures;<WORKSPACE>\win_b64\resources\graphic\splashscreens;<WORKSPACE>\win_b64\resources\graphic\symbols;<WORKSPACE>\win_b64\resources\graphic\textures;<CATIA_INSTALL>\win_b64\resources\graphic;<CATIA_INSTALL>\win_b64\resources\graphic\icons;<CATIA_INSTALL>\win_b64\resources\graphic\figures;<CATIA_INSTALL>\win_b64\resources\graphic\splashscreens;<CATIA_INSTALL>\win_b64\resources\graphic\symbols;<CATIA_INSTALL>\win_b64\resources\graphic\textures
+CATMsgCatalogPath=<WORKSPACE>\win_b64\resources\msgcatalog;<CATIA_INSTALL>\win_b64\resources\msgcatalog
+CATFeatureCatalogPath=<WORKSPACE>\win_b64\resources\featurecatalog;<CATIA_INSTALL>\win_b64\resources\featurecatalog
+CATDefaultCollectionStandard=<WORKSPACE>\win_b64\resources\standard;<CATIA_INSTALL>\win_b64\resources\standard
+CATKnowledgePath=<WORKSPACE>\win_b64\resources\knowledge;<CATIA_INSTALL>\win_b64\resources\knowledge
+CATStartupPath=<WORKSPACE>\win_b64\startup;<CATIA_INSTALL>\win_b64\startup
+CATW3ResourcesPath=<WORKSPACE>\win_b64\docs;<CATIA_INSTALL>\win_b64\docs
+CATReconcilePath=
+CATReferenceSettingPath=
+CATUserSettingPath=CSIDL_APPDATA\DassaultSystemes\CATSettings
+CATCollectionStandard=
+CATTemp=CSIDL_LOCAL_APPDATA\DassaultSystemes\CATTemp
+CATMetasearchPath=DSKEY_TMPDIR
+CATW3PublishPath=DSKEY_TMPDIR
+CATSharedWorkbookPath=DSKEY_TMPDIR
+CATErrorLog=CSIDL_LOCAL_APPDATA\DassaultSystemes\CATTemp\error.log
+CATReport=CSIDL_LOCAL_APPDATA\DassaultSystemes\CATReport
+CATDisciplinePath=
+USER_HOME=CSIDL_PERSONAL
+JAVA_HOME=%JAVA_HOME%
+CLASSPATH_JDBC=
+CLASSPATH=%CLASSPATH_JDBC%;%CLASSPATH%
+PATH=<WORKSPACE>\win_b64\code\bin;<WORKSPACE>\win_b64\code\command;%PATH%;<CATIA_INSTALL>\win_b64\code\bin;<CATIA_INSTALL>\win_b64\code\command;%JAVA_HOME%\bin

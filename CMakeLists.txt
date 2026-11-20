@@ -1,0 +1,59 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8.12)
+SET(PROJECT_NAME "CatiaLua" CACHE string "denominate the solution")
+PROJECT(${PROJECT_NAME})
+
+#SET(CMAKE_BUILD_TYPE, RELEASE)
+# IF (UNIX)
+    # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fPIC")
+# ENDIF()
+
+
+#SET(CMAKE_DEBUG_POSTFIX "d" CACHE STRING "add a postfix, usually d on windows")
+#SET(CMAKE_RELEASE_POSTFIX "" CACHE STRING "add a postfix, usually empty on windows")
+#SET(CMAKE_RELWITHDEBINFO_POSTFIX "rd" CACHE STRING "add a postfix, usually empty on windows")
+#SET(CMAKE_MINSIZEREL_POSTFIX "s" CACHE STRING "add a postfix, usually empty on windows")
+#IF (CMAKE_BUILD_TYPE MATCHES "Release")
+#    SET(CMAKE_BUILD_POSTFIX "${CMAKE_RELEASE_POSTFIX}")
+#ELSEIF (CMAKE_BUILD_TYPE MATCHES "MinSizeRel")
+#    SET(CMAKE_BUILD_POSTFIX "${CMAKE_MINSIZEREL_POSTFIX}")
+#ELSEIF(CMAKE_BUILD_TYPE MATCHES "RelWithDebInfo")
+#    SET(CMAKE_BUILD_POSTFIX "${CMAKE_RELWITHDEBINFO_POSTFIX}")
+#ELSEIF(CMAKE_BUILD_TYPE MATCHES "Debug")
+#    SET(CMAKE_BUILD_POSTFIX "${CMAKE_DEBUG_POSTFIX}")
+#ELSE()
+#    SET(CMAKE_BUILD_POSTFIX "")
+#ENDIF()
+
+IF (UNIX)
+    SET(DEPEND_BUILD_TYPE "install_gcc")#"install_vs2019_x64"
+ELSEIF(WIN32)
+    SET(DEPEND_BUILD_TYPE "install_vs2019_x64")#"install_vs2019_x64"
+ELSE()
+    SET(DEPEND_BUILD_TYPE "install_vs2019_x64")#"install_vs2019_x64"
+ENDIF()
+
+SET(DEPEND_DIR "$ENV{EEditor2_DEPEND}" CACHE PATH "EEditor2 Depend dir (contains caa/)")
+IF (NOT DEPEND_DIR)
+    SET(DEPEND_DIR "${PROJECT_SOURCE_DIR}/../../../Depend")
+ENDIF()
+
+IF (WIN32 OR UNIX)
+    SET(CAA_DIR ${DEPEND_DIR}/caa)
+    SET(CAA_INCLUDE_DIR ${CAA_DIR}/CAAIncludeFiles)
+ENDIF ()
+
+#导出cmake的编译信息，给YCM插件使用
+SET(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+if(UNIX)
+    set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")
+endif()
+
+# ADD_DEFINITIONS (-DUSE_QT_BASIC)
+#---------------------------------
+add_subdirectory(CatiaLua)
+
+
+IF (UNIX)
+ # add_subdirectory(UEPlugin)
+ENDIF()

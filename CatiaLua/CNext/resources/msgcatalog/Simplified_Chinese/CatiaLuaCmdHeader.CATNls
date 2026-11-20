@@ -1,0 +1,8 @@
+
+// Run Lua
+CatiaLuaCmdHeader.RunLua.Title = "执行Lua";
+CatiaLuaCmdHeader.RunLua.Help = "执行Lua";
+CatiaLuaCmdHeader.RunLua.ShortHelp = "执行Lua";
+CatiaLuaCmdHeader.RunLua.LongHelp = "执行Lua";
+
+// END WIZARD REPLACEMENT ZONE
